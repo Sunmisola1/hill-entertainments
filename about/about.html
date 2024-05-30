@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="about.css" />
+    <script
+      src="https://kit.fontawesome.com/9e0694c1ee.js"
+      crossorigin="anonymous"
+    ></script>
+ 
+    <!-- Include the Swiper.js library -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/constant.css" />
+  </head>
+  <body class="font-serif">
+    <div class="about">
+      <header class="sticky text-black p-2 font-bold text-lg font-body nav-wrap">
+        <div class="container mx-auto flex items-center justify-between mt-3">
+          <div class="flex items-center">
+            <a href="/src/index.html" class="text-2xl font-bold text-yellow-400">
+              <img src="/assets/logo.png" alt="logo" class="h-10 w-auto" />
+            </a>
+          </div>
+          <nav class="hidden md:flex space-x-6">
+            <a href="/index2.html" class="hover:text-yellow-400">Home</a>
+            <a href="/about/about.html" class="hover:text-yellow-400">About Us</a>
+            <a href="/artist/artist.html" class="hover:text-yellow-400"
+              >Artists</a
+            >
+            <a href="/music-catalogue/music.html" class="hover:text-yellow-400"
+              >Music</a
+            >
+            <a href="/services/services.html" class="hover:text-yellow-400"
+              >Services</a
+            >
+  
+            <a href="/contact/contact.html" class="hover:text-yellow-400"
+              >Contact</a
+            >
+          </nav>
+          <div class="hidden md:flex items-center space-x-4">
+            <button
+              class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-yellow-500"
+            ><a href="/users/login.html">Subscribe</a>  
+            </button>
+          </div>
+          <!-- bug -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-button"
+              class="text-red-500 hover:text-yellow-400"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- mobile view -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden  z-10 absolute bg-black  top-16 right-0 w-64 text-lg text-center p-4 space-y-4 mobile-text head-link"
+      >
+        <ul>
+          <li class="hover:bg-white hover:w-full">
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-red-600 py-3"
+              >Home</a
+            >
+          </li>
+          <li class=" hover:bg-white hover:w-full">
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-red-600 py-3"
+              >Artists</a
+            >
+          </li>
+          <li class=" hover:bg-white hover:w-full">
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-red-600 py-3"
+              >Music</a
+            >
+          </li>
+          <li class=" hover:bg-white hover:w-full">
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-red-600 py-3"
+              >Services</a
+            >
+          </li>
+          <li  class=" hover:bg-white hover:w-full">
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-red-600 py-3"
+              >About Us</a
+            >
+          </li>
+          <li class=" hover:bg-white hover:w-full">
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-red-400 py-3"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    <!-- Hero Section -->
+    <section class="hero bg-cover bg-center flex items-center text-white">
+      <div class="container mx-auto text-center">
+        <h1
+          class="text-5xl font-bold mb-4 animate__animated animate__fadeIn animate__delay-1s"
+        >
+          About Us
+        </h1>
+        <p
+          class="text-lg animate__animated animate__fadeIn font-bold font-serif animate__delay-2s"
+        >
+          Discover the story and passion behind Your Record Label.
+        </p>
+      </div>
+    </section>
+
+    <!-- introduction-->
+    <section class="container mx-auto mt-12 flex flex-col md:flex-row">
+      <!-- Left Part (About Us Text) -->
+      <div class="md:w-1/2 pr-8">
+        <div class="sec-text w-82 m-4 ">
+          <h2
+            class="md:text-left text-center text-3xl text-red-700 m-4 uppercase font-serif font-bold mb-4"
+          >
+            Who We Are
+          </h2>
+          <p
+            class="text-gray-700 leading-relaxed text-justify w-84 font-serif"
+          >
+            Your Record Label is more than just a music company; we are a
+            community of artists, creators, and music enthusiasts. Our journey
+            began with a simple yet powerful idea: to provide a platform for
+            artists to express themselves authentically.
+          </p>
+          <p
+            class="text-gray-700 leading-relaxed text-justify font-serif mt-4"
+          >
+            We believe in the transformative power of music and its ability to
+            inspire, connect, and evoke emotions. Our commitment is to support
+            emerging talents, foster creativity, and deliver exceptional musical
+            experiences to our audience.
+          </p>
+      
+        </div>
+      </div>
+
+      <!-- Right Part (Image) -->
+      <div class="md:w-1/2 mt-6 md:mt-0">
+        <img
+          src="/assets/mybg.png"
+          alt="About Us Image"
+          class="w-full h-auto rounded-lg"
+        />
+      </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="container mx-auto mt-16 flex flex-col md:flex-row">
+      <!-- Left Part (Our Mission) -->
+      <div class="md:w-1/2 pr-8 mb-8">
+        <div class="relative">
+          <div
+            class="slant-left bg-red-900 absolute top-0 bottom-0 left-0 w-6"
+          ></div>
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h3 class="text-3xl font-bold mb-4 text-red-700 font-serif">
+              Our Mission
+            </h3>
+            <p class="text-gray-700 text-justify leading-relaxed font-serif">
+              At Your Record Label, our mission is to empower artists to reach
+              their full potential. We provide a nurturing environment that
+              encourages creativity, collaboration, and continuous growth.
+              Through mentorship programs, state-of-the-art studios, and
+              industry connections, we aim to foster the next generation of
+              musical innovators.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Part (Our Vision) -->
+      <div class="md:w-1/2 pr-8 mb-8">
+        <div class="relative">
+          <div
+            class="slant-right bg-red-900 absolute top-0 bottom-0 right-0 w-6"
+          ></div>
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h3 class="text-3xl font-bold mb-4 text-red-700 font-serif">
+              Our Vision
+            </h3>
+            <p class="text-gray-700 text-justify leading-relaxed font-serif">
+              Our vision at Your Record Label is to create a global community of
+              artists and music lovers By
+              supporting diverse talents, promoting inclusivity, and embracing
+              innovation, we envision a world where every individual can find
+              inspiration and express themselves freely through the power of
+              music.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Call-to-Action Section -->
+ <section class="bg-black text-white py-16 text-center">
+  <h2 class="text-3xl font-bold mb-4">
+    Ready to Elevate Your Music Career?
+  </h2>
+  <p class="text-gray-400">
+    Contact us to explore our services and take your music to new heights.
+  </p>
+  <a
+    href="contact.html"
+    class="mt-8 inline-block bg-red-600 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full"
+    >Get Started</a
+  >
+</section>
+        <!-- Awards and Recognition Section -->
+        <section class="container-fluid mx-auto mt-12">
+          <h2
+            class="text-3xl font-bold mb-8 text-center underline font-serif text-red-700"
+          >
+            Awards and Recognition
+          </h2>
+    
+          <!-- Award Cards -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+          >
+            <!-- Award Card 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+              <img
+                src="/assets/banner.jpg"
+                alt="Award 1"
+                class="w-36 h-36 mx-auto mb-4 "
+              />
+              <h3 class="text-xl font-bold mb-2 font-serif text-red-700">
+                Best Album
+              </h3>
+              <p class="text-yellow-600">2020</p>
+            </div>
+    
+            <!-- Award Card 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+              <img
+                src="/assets/banner3.jpg"
+                alt="Award 2"
+                class="w-36 h-36 mx-auto mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2 font-serif text-red-700">
+                Artist of the Year
+              </h3>
+              <p class="text-yellow-600">2019</p>
+            </div>
+    
+            <!-- Award Card 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+              <img
+                src="/assets/banner3.jpg"
+                alt="Award 3"
+                class="w-36 h-36 mx-auto mb-4 "
+              />
+              <h3 class="text-xl font-bold mb-2 font-serif text-red-700">
+                Breakthrough Artist
+              </h3>
+              <p class="text-yellow-600">2018</p>
+            </div>
+    
+            <!-- Award Card 4 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+              <img
+                src="/assets/banner3.jpg"
+                alt="Award 4"
+                class="w-36 h-36 mx-auto mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2 font-serif text-red-700">
+                Song of the Year
+              </h3>
+              <p class="text-yellow-600">2017</p>
+            </div>
+            <!-- Award Card 5 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+              <img
+                src="/assets/banner3.jpg"
+                alt="Award 4"
+                class="w-36 h-36 mx-auto mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2 font-serif text-red-700">
+                Song of the Year
+              </h3>
+              <p class="text-yellow-600">2017</p>
+            </div>
+            <!-- Award Card 6 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+              <img
+                src="/assets/banner3.jpg"
+                alt="Award 4"
+                class="w-36 h-36 mx-auto mb-4"
+              />
+              <h3 class="text-xl font-bold mb-2 font-serif text-red-700">
+                Song of the Year
+              </h3>
+              <p class="text-yellow-600">2017</p>
+            </div>
+    
+            <!-- ... (Add more award cards) ... -->
+          </div>
+        </section>
+
+           <!-- Top Tracks Section -->
+           <section class="pb-4 bg-gray-100 rounded-lg shadow-md mt-28 md:mt-0 sec-4 overflow-x-hidden">
+            <h2 class="text-2xl font-bold mb-4 text-center">Top Tracks</h2>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="block md:flex  justify-center m-4 md:m-0 md:justify-evenly overflow-x-hidden">
+                            <!-- Card 1 Content Goes Here -->
+                            <div class="bg-gray-200 rounded-md m-2 mb-1 mt-5  flex p-2 md:block md:p-12">
+                                <!-- Image with Favorite Icon -->
+                                <div class="relative mx-1 m-auto w-36 md:mb-4 md:ml-0 md:p-2  ">
+                                    <img src="/assets/album.png" alt="Music Image" class="w-24 h-16 md:w-full md:h-36 object-fit  md:object-cover rounded-md">
+                                    <i class="far fa-heart hidden md:absolute md:top-2 md:right-2 text-red-500 text-lg"></i>
+                                </div>
+                                <!-- Title and Artist -->
+                                <div class=" md:ml-0 mt-3 md:mt-0 w-36">
+                                <h3 class="text-lg font-bold mb-1 ">AwesomeTrack</h3>
+                                <p class="text-gray-700">Artist Name</p>
+                             
+                                <!-- Release Date with Right Arrow -->
+                                <div class="flex relative items-center mt-2">
+                                    <p class="text-gray-500">Dec 1, 2023 <span class="ml-8"><i class="fas fa-play  text-gray-500"></i></i></span></p>
+                                                                    </div>
+                              </div>
+                            </div>
+                            <!-- card 2 -->
+                            <div class="bg-gray-200 rounded-md m-2 mb-1 mt-5  flex p-2 md:block md:p-12">
+                              <!-- Image with Favorite Icon -->
+                              <div class="relative mx-1 m-auto w-36 md:mb-4 md:ml-0 md:p-2  ">
+                                  <img src="/assets/album.png" alt="Music Image" class="w-24 h-16 md:w-full md:h-36 object-fit  md:object-cover rounded-md">
+                                  <i class="far fa-heart hidden md:absolute md:top-2 md:right-2 text-red-500 text-lg"></i>
+                              </div>
+                              <!-- Title and Artist -->
+                              <div class=" md:ml-0 mt-3 md:mt-0 w-36">
+                              <h3 class="text-lg font-bold mb-1 ">AwesomeTrack</h3>
+                              <p class="text-gray-700">Artist Name</p>
+                           
+                              <!-- Release Date with Right Arrow -->
+                              <div class="flex relative items-center mt-2">
+                                  <p class="text-gray-500">Dec 1, 2023 <span class="ml-8"><i class="fas fa-play  text-gray-500"></i></i></span></p>
+                                                                  </div>
+                            </div>
+                          </div>
+                          <!-- card 3-->
+                          <div class="bg-gray-200 rounded-md m-2 mb-1 mt-5  flex p-2 md:block md:p-12">
+                            <!-- Image with Favorite Icon -->
+                            <div class="relative mx-1 m-auto w-36 md:mb-4 md:ml-0 md:p-2  ">
+                                <img src="/assets/album.png" alt="Music Image" class="w-24 h-16 md:w-full md:h-36 object-fit  md:object-cover rounded-md">
+                                <i class="far fa-heart hidden md:absolute md:top-2 md:right-2 text-red-500 text-lg"></i>
+                            </div>
+                            <!-- Title and Artist -->
+                            <div class=" md:ml-0 mt-3 md:mt-0 w-36">
+                            <h3 class="text-lg font-bold mb-1 ">AwesomeTrack</h3>
+                            <p class="text-gray-700">Artist Name</p>
+                         
+                            <!-- Release Date with Right Arrow -->
+                            <div class="flex relative items-center mt-2">
+                                <p class="text-gray-500">Dec 1, 2023 <span class="ml-8"><i class="fas fa-play  text-gray-500"></i></i></span></p>
+                                                                </div>
+                          </div>
+                        </div>
+                        <!-- card 4 -->
+                        <div class="bg-gray-200 rounded-md m-2 mb-1 mt-5  flex p-2 md:block md:p-12">
+                          <!-- Image with Favorite Icon -->
+                          <div class="relative mx-1 m-auto w-36 md:mb-4 md:ml-0 md:p-2  ">
+                              <img src="/assets/album.png" alt="Music Image" class="w-24 h-16 md:w-full md:h-36 object-fit  md:object-cover rounded-md">
+                              <i class="far fa-heart hidden md:absolute md:top-2 md:right-2 text-red-500 text-lg"></i>
+                          </div>
+                          <!-- Title and Artist -->
+                          <div class=" md:ml-0 mt-3 md:mt-0 w-36">
+                          <h3 class="text-lg font-bold mb-1 ">AwesomeTrack</h3>
+                          <p class="text-gray-700">Artist Name</p>
+                       
+                          <!-- Release Date with Right Arrow -->
+                          <div class="flex relative items-center mt-2">
+                              <p class="text-gray-500">Dec 1, 2023 <span class="ml-8"><i class="fas fa-play  text-gray-500"></i></i></span></p>
+                                                              </div>
+                        </div>
+                      </div>
+                      
+                    
+                            <!-- Repeat the pattern for more cards -->
+
+                        </div>
+                    </div>
+
+                        <!-- slide 2 -->
+                        <div class="swiper-slide">
+                          <div class="block md:flex  justify-center m-4 md:m-0 md:justify-evenly overflow-x-hidden">
+                              <!-- Card 1 Content Goes Here -->
+                              <div class="bg-gray-200 rounded-md m-2 mb-1 mt-5  flex p-2 md:block md:p-12">
+                                  <!-- Image with Favorite Icon -->
+                                  <div class="relative mx-1 m-auto w-36 md:mb-4 md:ml-0 md:p-2  ">
+                                      <img src="/assets/album.png" alt="Music Image" class="w-24 h-16 md:w-full md:h-36 object-fit  md:object-cover rounded-md">
+                                      <i class="far fa-heart hidden md:absolute md:top-2 md:right-2 text-red-500 text-lg"></i>
+                                  </div>
+                                  <!-- Title and Artist -->
+                                  <div class=" md:ml-0 mt-3 md:mt-0 w-36">
+                                  <h3 class="text-lg font-bold mb-1 ">AwesomeTrack</h3>
+                                  <p class="text-gray-700">Artist Name</p>
+                               
+                                  <!-- Release Date with Right Arrow -->
+                                  <div class="flex relative items-center mt-2">
+                                      <p class="text-gray-500">Dec 1, 2023 <span class="ml-8"><i class="fas fa-play  text-gray-500"></i></i></span></p>
+                                                                      </div>
+                                </div>
+                              </div>
+                              <!-- card 2 -->
+                              <div class="bg-gray-200 rounded-md m-2 mb-1 mt-5  flex p-2 md:block md:p-12">
+                                <!-- Image with Favorite Icon -->
+                                <div class="relative mx-1 m-auto w-36 md:mb-4 md:ml-0 md:p-2  ">
+                                    <img src="/assets/album.png" alt="Music Image" class="w-24 h-16 md:w-full md:h-36 object-fit  md:object-cover rounded-md">
+                                    <i class="far fa-heart hidden md:absolute md:top-2 md:right-2 text-red-500 text-lg"></i>
+                                </div>
+                                <!-- Title and Artist -->
+                                <div class=" md:ml-0 mt-3 md:mt-0 w-36">
+                                <h3 class="text-lg font-bold mb-1 ">AwesomeTrack</h3>
+                                <p class="text-gray-700">Artist Name</p>
+                             
+                                <!-- Release Date with Right Arrow -->
+                                <div class="flex relative items-center mt-2">
+                                    <p class="text-gray-500">Dec 1, 2023 <span class="ml-8"><i class="fas fa-play  text-gray-500"></i></i></span></p>
+                                                                    </div>
+                              </div>
+                            </div>
+                            <!-- card 3-->
+                            <div class="bg-gray-200 rounded-md m-2 mb-1 mt-5  flex p-2 md:block md:p-12">
+                              <!-- Image with Favorite Icon -->
+                              <div class="relative mx-1 m-auto w-36 md:mb-4 md:ml-0 md:p-2  ">
+                                  <img src="/assets/album.png" alt="Music Image" class="w-24 h-16 md:w-full md:h-36 object-fit  md:object-cover rounded-md">
+                                  <i class="far fa-heart hidden md:absolute md:top-2 md:right-2 text-red-500 text-lg"></i>
+                              </div>
+                              <!-- Title and Artist -->
+                              <div class=" md:ml-0 mt-3 md:mt-0 w-36">
+                              <h3 class="text-lg font-bold mb-1 ">AwesomeTrack</h3>
+                              <p class="text-gray-700">Artist Name</p>
+                           
+                              <!-- Release Date with Right Arrow -->
+                              <div class="flex relative items-center mt-2">
+                                  <p class="text-gray-500">Dec 1, 2023 <span class="ml-8"><i class="fas fa-play  text-gray-500"></i></i></span></p>
+                                                                  </div>
+                            </div>
+                          </div>
+                          <!-- card 4 -->
+                          <div class="bg-gray-200 rounded-md m-2 mb-1 mt-5  flex p-2 md:block md:p-12">
+                            <!-- Image with Favorite Icon -->
+                            <div class="relative mx-1 m-auto w-36 md:mb-4 md:ml-0 md:p-2  ">
+                                <img src="/assets/album.png" alt="Music Image" class="w-24 h-16 md:w-full md:h-36 object-fit  md:object-cover rounded-md">
+                                <i class="far fa-heart hidden md:absolute md:top-2 md:right-2 text-red-500 text-lg"></i>
+                            </div>
+                            <!-- Title and Artist -->
+                            <div class=" md:ml-0 mt-3 md:mt-0 w-36">
+                            <h3 class="text-lg font-bold mb-1 ">AwesomeTrack</h3>
+                            <p class="text-gray-700">Artist Name</p>
+                         
+                            <!-- Release Date with Right Arrow -->
+                            <div class="flex relative items-center mt-2">
+                                <p class="text-gray-500">Dec 1, 2023 <span class="ml-8"><i class="fas fa-play  text-gray-500"></i></i></span></p>
+                                                                </div>
+                          </div>
+                        </div>
+                        
+                      
+                              <!-- Repeat the pattern for more cards -->
+  
+                          </div>
+                      </div>
+                    <!-- Repeat the pattern for more slides -->
+                  
+                  
+                </div>
+
+              
+
+        </section>
+
+
+        <!-- Artist Development and Community Engagement Section -->
+  
+    <section class=" container mx-auto mt-16 flex flex-col md:flex-row">
+      <!-- Left Part (Our Mission) -->
+      <div class="md:w-1/2 pr-8 mb-8">
+        <div class="relative">
+              <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h3 class="text-3xl font-bold mb-4 text-red-700 font-serif">
+              Artist Development
+            </h3>
+            <p class="text-gray-700 text-justify leading-relaxed font-serif">
+              At Your Record Label, we are committed to the holistic development
+              of artists. Our approach goes beyond producing music; we focus on
+              nurturing each artist's unique voice, helping them grow as
+              performers, songwriters, and individuals. From personalized coaching
+              to workshops with industry experts, we provide the tools and
+              guidance for artists to evolve and excel in their careers.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Part (Our Vision) -->
+      <div class="md:w-1/2 pr-8 mb-8">
+        <div class="relative">
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h3 class="text-3xl font-bold mb-4 text-red-700 font-serif">
+              Community Engagement
+            </h3>
+            <p class="text-gray-700 text-justify leading-relaxed font-serif">
+              Music has the power to unite. Through events, collaborations, and
+            outreach programs, we actively engage with our audience and create
+            spaces for shared experiences. Whether it's supporting local talent,
+            organizing music festivals, or collaborating with community
+            initiatives, we strive to build connections that go beyond the
+            boundaries of the recording studio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+       <!-- Positive Reviews Section -->
+    <section class="mx-8 mt-12 mb-4">
+      <h2 class="text-3xl font-bold mb-8 text-red-800 text-center">
+        Positive Reviews
+      </h2>
+
+      <!-- Review Cards -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 "
+      >
+        <!-- Review Card 1 -->
+        <div class="bg-white p-2 rounded-lg shadow-lg">
+          <img
+            src="/assets/1.png"
+            alt="Reviewer 1"
+            class="w-34 h-36 rounded-full mx-auto mb-2"
+          />
+          <h3 class="text-xl font-bold text-red-700 mb-2 text-center">John Smith</h3>
+          <p class="text-gray-600 text-align">
+            "Your Record Label has been a game-changer for me. The support,
+            guidance, and opportunities provided are unparalleled. It's a
+            community that fosters creativity and collaboration. Proud to be
+            part of this family!"
+          </p>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg ">
+          <img
+            src="/assets/2.png"
+            alt="Reviewer 2"
+            class="w-34 h-36 rounded-full mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold mb-2 text-red-700 text-center">Emily Johnson</h3>
+          <p class="text-gray-600 text-align">
+            "I can't express how grateful I am to be associated with Your Record
+            Label. The personalized attention, industry insights, and the sense
+            of belonging make it a standout choice for any artist. Highly
+            recommended!"
+          </p>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg">
+          <img
+            src="/assets/3.png"
+            alt="Reviewer 3"
+            class="w-34 h-36 rounded-full mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold mb-2 text-red-700 text-center">Alexandra Davis</h3>
+          <p class="text-gray-600 text-align">
+            "Being part of Your Record Label has been an incredible journey. The
+            team's dedication to artists' growth is evident in every aspect. The
+            collaborative spirit and positive atmosphere set it apart from the
+            rest."
+          </p>
+        </div>
+
+      
+
+        <!-- ... (Add more review cards) ... -->
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+      <div class="container mx-auto flex justify-between items-center">
+        <p>&copy; 2024 Hills Entertainment</p>
+    
+        <div class="social-link">
+          <h3 class="text-xl font-bold mb-4">Connect with Us</h3>
+          <div class="flex space-x-4">
+              <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+          </div>
+      </div>
+        <nav>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </nav>
+      </div>
+    </footer>
+    <!-- Your JavaScript goes here (e.g., for interactive elements) -->
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  </body>
+</html>

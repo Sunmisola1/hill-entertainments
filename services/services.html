@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="about.css" />
+    <script
+      src="https://kit.fontawesome.com/9e0694c1ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Add these lines in the head of your HTML file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/constant.css" />
+    <link rel="stylesheet" href="artist.css" />
+  </head>
+  <body class="font-serif">
+    <div class="artist">
+      <header class="text-black p-4 font-bold text-lg font-body header-wrap">
+        <div class="container mx-auto flex items-center justify-between mt-3">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-yellow-400">
+              <img src="/assets/logo.png" alt="logo" class="h-10 w-auto" />
+            </a>
+          </div>
+          <nav class="hidden md:flex space-x-6">
+            <a href="/index2.html" class="hover:text-yellow-400">Home</a>
+            <a href="/about/about.html" class="hover:text-yellow-400"
+              >About Us</a
+            >
+            <a href="/artist/artist.html" class="hover:text-yellow-400"
+              >Artists</a
+            >
+            <a href="/music-catalogue/music.html" class="hover:text-yellow-400"
+              >Music</a
+            >
+            <a href="/services/services.html" class="hover:text-yellow-400"
+              >Services</a
+            >
+
+            <a href="/contact/contact.html" class="hover:text-yellow-400"
+              >Contact</a
+            >
+          </nav>
+          <div class="hidden md:flex items-center space-x-4">
+            <button
+              class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-yellow-500"
+            ><a href="/users/login.html">Subscribe</a>  
+            </button>
+          </div>
+          <!-- bug -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-button"
+              class="text-white hover:text-yellow-400"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- Hero Section -->
+      <section class="bg-black text-white py-16 text-center">
+        <h1 class="text-4xl font-bold mb-4">Our Services</h1>
+        <p class="text-gray-400">
+          Explore the range of services we offer to our artists.
+        </p>
+      </section>
+
+      <!-- Service Categories Section -->
+      <section class="container mx-auto my-8">
+        <h2 class="text-3xl font-bold mb-6 font-serif text-black">
+          Service Categories
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 ">
+          <!-- Service Category 1 -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row lg:flex-row"
+          >
+            <div class="md:w-1/2 lg:w-1/2">
+              <img
+                src="/assets/banner3.jpg"
+                alt="Artist Promotion"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="md:w-1/2 lg:w-1/2 md:pl-8 lg:pl-8 mt-4 md:mt-0 lg:mt-0">
+              <h3 class="text-2xl text-black  font-bold mb-4">
+                Artist Promotion
+              </h3>
+              <p class="text-gray-400 font-serif text-align">
+                Give your artist the spotlight they deserve with our
+                comprehensive artist promotion services. We deploy strategic
+                marketing campaigns, harnessing the power of social media, press
+                coverage, and influencer collaborations. <br />
+
+                Through tailored promotional plans, we ensure your artist's
+                music reaches a wider audience and gains recognition in the
+                competitive music industry.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service Category 2 -->
+          <div
+            class="bg-white p-12 rounded-lg shadow-lg flex flex-col md:flex-row lg:flex-row mt-8"
+          >
+            <div class="md:w-1/2 lg:w-1/2 md:pl-8 lg:pl-8 mt-4 md:mt-0 lg:mt-0">
+              <h3 class="text-2xl text-black font-bold mb-4">
+                Music Production
+              </h3>
+              <p class="text-gray-400 font-serif text-align">
+                Elevate your artist's sound with our cutting-edge music
+                production services. Our team of experienced producers,
+                engineers, and sound designers collaborates closely with your
+                artists to bring their musical vision to life. From recording to
+                mixing and mastering, we ensure a seamless and professional
+                production process, resulting in standout, high-quality tracks
+                that resonate with listeners.
+              </p>
+            </div>
+            <div class="md:w-1/2 lg:w-1/2">
+              <img
+                src="/assets/banner.jpg"
+                alt="Music Production"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Service Category 3 -->
+          <div
+            class="bg-white p-12 rounded-lg shadow-lg flex flex-col md:flex-row lg:flex-row mt-8 "
+          >
+            <div class="md:w-1/2 lg:w-1/2">
+              <img
+                src="/assets/services.jpg"
+                alt="Event Management"
+                class="w-full h-56 object-cover"
+              />
+            </div>
+            <div class="md:w-1/2 lg:w-1/2 md:pl-8 lg:pl-8 mt-4 md:mt-0 lg:mt-0 ">
+              <h3 class="text-2xl text-black font-bold mb-4">
+                Event Management
+              </h3>
+              <p class="text-gray-400 font-serif text-align">
+                Create unforgettable moments for your artist with our meticulous
+                event management services. From album launches and concert tours
+                to exclusive showcases, we handle every aspect of event
+                planning, coordination, and execution. 
+              </p>
+            </div>
+          </div>
+          <!-- Add more service category sections as needed -->
+        </div>
+      </section>
+
+
+
+ <!-- Call-to-Action Section -->
+ <section class="bg-black text-white py-16 text-center">
+  <h2 class="text-3xl font-bold mb-4">
+    Ready to Elevate Your Music Career?
+  </h2>
+  <p class="text-gray-400">
+    Contact us to explore our services and take your music to new heights.
+  </p>
+  <a
+    href="contact.html"
+    class="mt-8 inline-block bg-red-600 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full"
+    >Get Started</a
+  >
+</section>
+
+
+      <!-- Featured Services Section -->
+      <section class="bg-gray-100 py-16">
+        <div class=" mx-auto">
+          <h2 class="text-2xl font-bold mb-6 text-center text-black">
+            Featured Services
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7   mx-8">
+            <!-- Featured Service Card 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-xl font-bold mb-4 text-center">Social Media Marketing</h3>
+              <img src="/assets/banner2.jpg" alt="" />
+              <p class="text-gray-600 text-align">
+                Build a strong online presence for your artist with our targeted
+                social media marketing strategies. We craft engaging content,
+                interact with the audience, and implement data-driven approaches
+                to enhance brand visibility. From growing followers to creating
+                buzz around releases and events, our social media expertise
+                ensures your artist stands out in the digital landscape.
+              </p>
+            </div>
+
+            <!-- Featured Service Card 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-xl font-bold mb-4 text-center">Album Production</h3>
+              <img src="/assets/banner2.jpg" alt="" />
+              <p class="text-gray-600 text-align">
+                Bring your artist's musical vision to fruition with our
+                comprehensive album production services. Our team of skilled
+                producers, engineers, and creatives collaborates closely with
+                artists throughout the entire production process. From concept
+                development to recording, mixing, and mastering, we strive to
+                deliver albums that not only meet but exceed artistic
+                expectations, setting your artist apart in the music industry.
+              </p>
+            </div>
+
+            <!-- Featured Service Card 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+              <h3 class="text-xl font-bold mb-4 text-center">Tour Management</h3>
+              <img src="/assets/banner2.jpg" alt="" />
+              <p class="text-gray-600 text-align">
+                Take your artist's music directly to the audience with our
+                comprehensive tour management services. We handle all aspects of
+                tour planning, logistics, and execution, ensuring a smooth and
+                successful tour experience. From selecting venues to managing
+                travel arrangements, our goal is to create memorable live
+                performances that leave a lasting impact on fans and contribute
+                to the overall success of your artist's music career.
+              </p>
+            </div>
+            <!-- Add more featured service cards as needed -->
+          </div>
+        </div>
+      </section>
+
+     
+      <footer class="bg-black text-white py-8">
+        <div class="container mx-auto flex justify-between items-center">
+          <p>&copy; 2024 Hills Entertainment</p>
+      
+          <div class="social-link">
+            <h3 class="text-xl font-bold mb-4">Connect with Us</h3>
+            <div class="flex space-x-4">
+                <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+          <nav>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

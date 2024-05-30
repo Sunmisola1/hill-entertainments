@@ -1,0 +1,17 @@
+.hero {
+  background: radial-gradient(
+      ellipse at bottom left,
+
+      rgba(229, 14, 14, 0.103),
+      rgba(8, 1, 1, 0.84),
+      rgba(8, 1, 1, 0.84),
+      rgba(8, 1, 1, 0.84),
+      rgba(8, 1, 1, 0.84),
+      rgba(8, 1, 1, 0.84)
+    ),
+    url('/assets/bg14.png');
+  height: 55vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

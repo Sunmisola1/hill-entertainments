@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="flex h-screen bg-gray-100">
+
+    <!-- Left Side - Picture -->
+    <div class="md:flex-1 md:bg-cover bgi" style="background-image: url('/assets/bg8.jpg');">
+        <!-- You can replace 'your-image-url.jpg' with the actual path to your image -->
+     <p class="flex justify-end mr-4 text-white font-bold hover:text-green-600"><a href="/index.html">Home</a></p>
+    </div>
+
+    <!-- Right Side - Login and Registration Form -->
+    <div id="login-form" class="flex-1 flex items-center justify-center ">
+        <div class="max-w-md w-full space-y-8 bg-gray-100 p-4 rounded-lg">
+            <div>
+                <img class="mx-auto h-12 w-auto" src="/assets/logo.png" alt="Logo">
+                <!-- You can replace 'your-logo-url.png' with the actual path to your logo -->
+                <h2 class="mt-6 text-center text-2xl font-extrabold text-gray-900">Welcome Back!</h2>
+            </div>
+            <form class="mt-8 space-y-6" action="#" method="POST">
+                <!-- Email Input -->
+                <div class="rounded-md shadow-sm">
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fas fa-envelope text-gray-500"></i>
+                        </div>
+                        <input type="text" id="username" name="username" class="form-input py-3 px-4 pl-10 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="Username" required>
+                    </div>
+                </div>
+
+                <!-- Password Input -->
+                <div class="mt-4">
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fas fa-lock text-gray-500"></i>
+                        </div>
+                        <input type="password" id="password" name="password" class="form-input py-3 px-4 pl-10 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="Password" required>
+                    </div>
+                </div>
+
+                               <!-- Submit Button -->
+                <div class="mt-6">
+                    <button type="submit" class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-800 transition duration-150 ease-in-out">
+                        <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                        Log in
+                    </button>
+                </div>
+
+                <!-- Toggle to Registration Page -->
+                <p class="mt-2 text-center text-sm">
+                    Don't have an account?
+                    <span id="toggle-register" class="text-red-600 cursor-pointer"> Register here.</span>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Form (Initially Hidden) -->
+    <div id="register-form" class="flex-1 flex items-center justify-center hidden">
+        <div class="max-w-md w-full space-y-6">
+           
+            <div class="max-w-md w-full space-y-4 bg-gray-100 p-4 rounded-lg ">
+               
+                <div>
+                    <img class="mx-auto h-12 w-auto" src="/assets/logo.png" alt="Logo">
+                    <!-- You can replace 'your-logo-url.png' with the actual path to your logo -->
+                    <h2 class="mt-1 text-center text-xl font-extrabold text-gray-900">Register!</h2>
+                </div>
+            <form class="mt-8 space-y-3" action="#" method="POST">
+                  <!-- first name -->
+                  <div class="mt-0">
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fas fa-user text-gray-500"></i>
+                        </div>
+                        <input type="text" id="username" name="username" class="form-input py-3 px-4 pl-10 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="FirstName" required>
+                    </div>
+                </div>
+                <!-- last name -->
+                  <div class="mt-2">
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fas fa-user text-gray-500"></i>
+                        </div>
+                        <input type="text" id="username" name="username" class="form-input py-3 px-4 pl-10 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="LastName" required>
+                    </div>
+                </div>
+                <!-- Email Input for Registration -->
+                <div class="rounded-md shadow-sm">
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fas fa-envelope text-gray-500"></i>
+                        </div>
+                        <input type="email" id="register-email" name="register-email" class="form-input py-3 px-4 pl-10 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="Email address" required>
+                    </div>
+                </div>
+
+                  <!-- Password Input -->
+                  <div class="mt-2">
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fas fa-lock text-gray-500"></i>
+                        </div>
+                        <input type="password" id="password" name="password" class="form-input py-3 px-4 pl-10 block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="Password" required>
+                    </div>
+                </div>
+
+                <!-- Subscribe Section in Registration -->
+                <div class="mt-8">
+                    <label for="register-subscribe" class="block text-lg mb-2 font-bold font-medium text-black">Join Our Mailing  List</label>
+                    <p class="text-sm font-serif text-align ">We would like to send you occasional news, information and special offer by emails or sms. Choose below whether you want to join our mailing list. You can unsubscribe anytime</p>
+                    <div class="mt-2">
+                        <label for="register-subscribe" class="ml-2 block text-sm text-gray-900">Yes, subscribe me using:</label>
+                        <div class="flex mt-2">
+                            <div class="email">
+                            <input type="checkbox" id="register-subscribe-email" name="register-subscribe-email" class="form-checkbox h-4 w-4 text-red-600 transition duration-150 ease-in-out">
+                            <label for="register-subscribe-email" class="ml-2 text-sm text-gray-900">Email</label>
+                            
+                            <input type="checkbox" id="register-subscribe-phone" name="register-subscribe-phone" class="ml-4 form-checkbox h-4 w-4 text-red-600 transition duration-150 ease-in-out">
+                            <label for="register-subscribe-phone" class="ml-2 text-sm text-gray-900">Phone</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verification Code Section for Email -->
+                <div id="email-verification" class="mt-4 hidden">
+                    <div class="email relative">
+                        <label for="register-subscribe-email" class="ml-2 text-sm text-gray-900">Email</label>
+                        <input type="text" id="register-subscribe-email" name="register-subscribe-email" class="form-input py-2 px-2  block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5"">
+                      <button class="bg-red-500 absolute top-6 right-0 p-2 rounded-lg text-sm">send code</button>
+                      <label for="email-code" class="block text-sm font-medium text-gray-700">Verification code sent to your email</label>
+                      <input type="text" id="email-code" name="email-code" class="form-input mt-1  py-2 px-2 block w-full rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="Enter code">
+                     
+                        </div>
+                </div>
+
+                <!-- Verification Code Section for Phone -->
+                <div id="phone-verification" class="mt-4 hidden">
+                    <div class="email relative">
+                        <label for="register-subscribe-email" class="ml-2 text-sm text-gray-900">Phone</label>
+                        <input type="text" id="register-subscribe-email" name="register-subscribe-email" placeholder="Phone Number" class="form-input py-2 px-2  block w-full leading-5 rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5"">
+                      <button class="bg-red-500 absolute top-6 right-0 p-2 rounded-lg text-sm">send code</button>
+                        </div>
+                        <label for="phone-code" class="block text-sm font-medium text-gray-700">Verification code sent to your phone</label>
+                        <input type="text" id="phone-code" name="phone-code" class="form-input  py-2 px-2 mt-1 block w-full rounded-md transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="Enter code">
+                      
+                </div>
+
+                <!-- Submit Button for Registration and Newsletter Subscription -->
+                <div class="mt-6">
+                    <button type="submit" class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-400 focus:outline-none focus:border-red-700 focus:shadow-outline-green active:bg-green-600 transition duration-150 ease-in-out">
+                        <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                        Register 
+                    </button>
+                </div>
+
+                <!-- Toggle to Login Page -->
+                <p class="mt-2 text-center text-sm">
+                    Already have an account?
+                    <span id="toggle-login" class="text-red-600 cursor-pointer">Log in here.</span>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript to toggle between login and registration forms -->
+    <script>
+        document.getElementById('toggle-register').addEventListener('click', function () {
+            document.getElementById('login-form').classList.add('hidden');
+            document.getElementById('register-form').classList.remove('hidden');
+        });
+
+        document.getElementById('toggle-login').addEventListener('click', function () {
+            document.getElementById('login-form').classList.remove('hidden');
+            document.getElementById('register-form').classList.add('hidden');
+        });
+
+        // Toggle verification code section based on selected subscribe options
+        document.getElementById('register-subscribe-email').addEventListener('change', function () {
+            document.getElementById('email-verification').classList.toggle('hidden', !this.checked);
+            document.getElementById('phone-verification').classList.add('hidden');
+        });
+
+        document.getElementById('register-subscribe-phone').addEventListener('change', function () {
+            document.getElementById('phone-verification').classList.toggle('hidden', !this.checked);
+            document.getElementById('email-verification').classList.add('hidden');
+        });
+    </script>
+
+</body>
+</html>

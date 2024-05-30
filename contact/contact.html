@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/constant.css">
+    <script src="https://kit.fontawesome.com/9e0694c1ee.js" crossorigin="anonymous"></script>
+
+    <title>Contact Us - Your Record Label</title>
+  </head>
+  <body>
+    <div class="contact ">
+      <header class="text-black p-4 font-bold text-lg font-body header-wrap">
+        <div class="container mx-auto flex items-center justify-between mt-3">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-yellow-400">
+              <img src="/assets/logo.png" alt="logo" class="h-10 w-auto" />
+            </a>
+          </div>
+          <nav class="hidden md:flex space-x-6">
+            <a href="/index2.html" class="hover:text-yellow-400">Home</a>
+            <a href="/about/about.html" class="hover:text-yellow-400">About Us</a>
+            <a href="/artist/artist.html" class="hover:text-yellow-400">Artists</a>
+            <a href="/music-catalogue/music.html" class="hover:text-yellow-400">Music</a>
+            <a href="/services/services.html" class="hover:text-yellow-400">Services</a>
+          
+            <a href="/contact/contact.html" class="hover:text-yellow-400">Contact</a>
+          </nav>
+          <div class="hidden md:flex items-center space-x-4">
+            <button
+              class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-yellow-500"
+            ><a href="/users/login.html">Subscribe</a>  
+            </button>
+          </div>
+          <!-- bug -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-button"
+              class="text-white hover:text-yellow-400"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- mobile view -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute bg-black bg-opacity-70 top-8 right-0 w-64 text-lg text-center p-4 space-y-4 mobile-text head-link mb-link"
+      >
+        <ul>
+          <li><a href="" class="block text-white text-xl  font-bold font-mono hover:text-yellow-400 py-3">Home</a></li>
+          <li>
+            <a href="/artist/artist.html" class="block text-white   text-xl   font-bold font-mono hover:text-yellow-400 py-3">Artists</a>
+          </li>
+          <li><a href="/music-catalogue/music.html" class="block text-white text-xl    font-bold font-mono hover:text-yellow-400 py-3">Music</a></li>
+          <li>
+            <a href="/services/services.html" class="block text-white   text-xl     font-bold font-mono hover:text-yellow-400 py-3">Services</a>
+          </li>
+          <li>
+            <a href="/about/about.html" class="block text-white   text-xl     font-bold font-mono hover:text-yellow-400 py-3">About Us</a>
+          </li>
+          
+            <a href="/contact/contact.html" class="block  text-white  text-xl font-bold font-mono hover:text-yellow-400 py-3">Contact</a>
+          
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Contact Page Content -->
+    <section class="bg-black text-white py-16 text-center">
+      <h1 class="text-4xl text-white font-bold mb-4">Contact Us</h1>
+      <!-- Centered divs with white background -->
+      <div class="flex justify-center">
+          <!-- First Div: Call -->
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <i class="fas fa-phone-alt text-3xl text-red-500 mb-4"></i>
+              <p class="text-gray-900 font-bold text-xl">Call us at:</p>
+              <p class="text-gray-500 font-bold">+1 (555) 123-4567</p>
+          </div>
+  
+          <!-- Second Div: Location -->
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center ml-4">
+            <i class="fas fa-map-marker-alt text-3xl text-red-500 mb-4"></i>
+                         <p class="text-gray-900 text-xl font-bold">Our Location:</p>
+              <p class="text-gray-500 font-bold">Street Address, City, State, ZIP Code</p>
+          </div>
+  
+          <!-- Third Div: Email -->
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center ml-4">
+            <i class="fas fa-envelope text-3xl text-red-500 mb-4"></i>
+              <p class="text-gray-900 font-bold text-xl">Email us at:</p>
+              <p class="font-bold"><a href="mailto:info@yourrecordlabel.com" class="text-gray-500 ">info@yourrecordlabel.com</a></p>
+          </div>
+      </div>
+  </section>
+   <!-- Contact Form -->
+<div class="mb-8 bg-red-100 bg-opacity-20 p-4 ">
+    
+    <form action="submit_form.php" method="post" class="max-w-md mx-auto bg-gray-100 border-gray-300 p-4 rounded-lg ">
+      <h3 class="text-2xl font-bold mb-2 text-center">Get in Touch</h3> 
+      <!-- Name -->
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700 mb-2 font-bold mt-6">Your Name <span class="text-red-500">*</span></label>
+            <input type="text" id="name" name="name" required class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-red-500">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+            <label for="email" class="block text-gray-700 mb-2 font-bold">Your Email <span class="text-red-500">*</span></label>
+            <input type="email" id="email" name="email" required class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-red-500">
+        </div>
+
+        <!-- Subject -->
+        <div class="mb-4">
+            <label for="subject" class="block text-gray-700 mb-2 font-bold">Subject <span class="text-red-500">*</span></label>
+            <input type="text" id="subject" name="subject" required class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-red-500">
+        </div>
+
+        <!-- Message -->
+        <div class="mb-6">
+            <label for="message" class="block text-gray-600 font-bold mb-2">Your Message <span class="text-red-500">*</span></label>
+            <textarea id="message" name="message" rows="4" required class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-red-500"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button type="submit" class="bg-red-500 hover:bg-yellow-600 text-white font-bold py-2 px-24 rounded-full inline-block transition duration-300">Submit</button>
+        </div>
+    </form>
+</div>
+<footer class="bg-black text-white py-8">
+  <div class="container mx-auto flex justify-between items-center">
+    <p>&copy; 2024 Hills Entertainment</p>
+
+    <div class="social-link">
+      <h3 class="text-xl font-bold mb-4">Connect with Us</h3>
+      <div class="flex space-x-4">
+          <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </div>
+    <nav>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+
+    <!-- Your JavaScript goes here (e.g., for interactive elements) -->
+  </body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9e0694c1ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Add these lines in the head of your HTML file -->
+    <link rel="stylesheet" href="/src/css/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/constant.css" />
+  </head>
+  <body>
+    <div class="about">
+      <header class="text-white p-4 font-bold text-lg font-body header-wrap">
+        <div class="container mx-auto flex items-center justify-between mt-3">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-yellow-400">
+              <img src="/assets/logo.png" alt="logo" class="h-10 w-auto" />
+            </a>
+          </div>
+          <nav class="hidden md:flex space-x-6">
+            <a href="#" class="hover:text-yellow-400">Home</a>
+            <a href="#" class="hover:text-yellow-400">Artists</a>
+            <a href="#" class="hover:text-yellow-400">Music</a>
+            <a href="#" class="hover:text-yellow-400">Services</a>
+            <a href="#" class="hover:text-yellow-400">About Us</a>
+            <a href="#" class="hover:text-yellow-400">Contact</a>
+          </nav>
+          <div class="hidden md:flex items-center space-x-4">
+            <button
+              class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-yellow-500"
+            >
+              Subscribe
+            </button>
+          </div>
+          <!-- bug -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-button"
+              class="text-white hover:text-yellow-400"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- mobile view -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute bg-red-500 bg-opacity-50 top-16 right-0 w-64 text-lg text-center p-4 space-y-4 mobile-text head-link"
+      >
+        <ul>
+          <li>
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-yellow-400 py-3"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-yellow-400 py-3"
+              >Artists</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-yellow-400 py-3"
+              >Music</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-yellow-400 py-3"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-yellow-400 py-3"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block text-white text-xl font-bold font-mono hover:text-yellow-400 py-3"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <section
+      class="hero bg-cover bg-center h-screen flex items-center text-white"
+    >
+      <div class="container mx-auto text-center">
+        <h1
+          class="text-5xl font-bold mb-4 animate__animated animate__fadeIn animate__delay-1s"
+        >
+          About Us
+        </h1>
+        <p class="text-lg animate__animated animate__fadeIn animate__delay-2s">
+          Discover the story and passion behind Your Record Label.
+        </p>
+      </div>
+    </section>
+
+    <!-- Two-Part Section -->
+    <section class="container mx-auto mt-12 flex flex-col md:flex-row">
+      <!-- Left Part (About Us Text) -->
+      <div class="md:w-2/3 pr-8">
+        <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Your Record Label is more than just a music company; we are a
+          community of artists, creators, and music enthusiasts. Our journey
+          began with a simple yet powerful idea: to provide a platform for
+          artists to express themselves authentically.
+        </p>
+        <p class="text-gray-700 leading-relaxed mt-4">
+          We believe in the transformative power of music and its ability to
+          inspire, connect, and evoke emotions. Our commitment is to support
+          emerging talents, foster creativity, and deliver exceptional musical
+          experiences to our audience.
+        </p>
+        <p class="text-gray-700 leading-relaxed mt-4">
+          At the heart of our label is a dedication to artistic freedom,
+          collaboration, and innovation. We strive to create an environment
+          where artists feel empowered to push boundaries, explore new genres,
+          and create timeless music that resonates with listeners around the
+          world.
+        </p>
+      </div>
+
+      <!-- Right Part (Image) -->
+      <div class="md:w-1/3 mt-6 md:mt-0">
+        <img
+          src="about_us_image.jpg"
+          alt="About Us Image"
+          class="w-full h-auto rounded-lg"
+        />
+      </div>
+    </section>
+    <!-- Mission and Vision Section -->
+    <section class="container mx-auto mt-12 flex flex-col md:flex-row">
+      <!-- Left Part (Our Mission) -->
+      <div class="md:w-1/2 pr-8 mb-8">
+        <div class="relative">
+          <div
+            class="slant-left bg-gray-900 absolute top-0 bottom-0 left-0 w-16"
+          ></div>
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+            <p class="text-gray-700 leading-relaxed">
+              At Your Record Label, our mission is to empower artists to reach
+              their full potential. We provide a nurturing environment that
+              encourages creativity, collaboration, and continuous growth.
+              Through mentorship programs, state-of-the-art studios, and
+              industry connections, we aim to foster the next generation of
+              musical innovators.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Part (Our Vision) -->
+      <div class="md:w-1/2 mt-6 md:mt-0">
+        <div class="relative">
+          <div
+            class="slant-right bg-gray-900 absolute top-0 bottom-0 right-0 w-16"
+          ></div>
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Our vision at Your Record Label is to create a global community of
+              artists and music lovers. We aspire to break boundaries and
+              connect people through the universal language of music. By
+              supporting diverse talents, promoting inclusivity, and embracing
+              innovation, we envision a world where every individual can find
+              inspiration and express themselves freely through the power of
+              music.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Meet Our Team Section -->
+    <section class="container mx-auto mt-12">
+      <h2 class="text-3xl font-bold mb-8 text-center">Meet Our Team</h2>
+
+      <!-- Team Cards -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
+      >
+        <!-- Team Member Card 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="team_member1.jpg"
+            alt="Team Member 1"
+            class="w-32 h-32 rounded-full mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold mb-2">John Doe</h3>
+          <p class="text-gray-600">Founder & CEO</p>
+        </div>
+
+        <!-- Team Member Card 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <!-- Add another team member card -->
+        </div>
+
+        <!-- ... (Add more team member cards) ... -->
+      </div>
+    </section>
+
+    <!-- Artist Development and Community Engagement Section -->
+    <section class="container mx-auto mt-12 flex flex-col md:flex-row">
+      <!-- Left Part (Artist Development) -->
+      <div class="md:w-1/2 pr-8">
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold mb-4">Artist Development</h2>
+          <p class="text-gray-700 leading-relaxed">
+            At Your Record Label, we are committed to the holistic development
+            of artists. Our approach goes beyond producing music; we focus on
+            nurturing each artist's unique voice, helping them grow as
+            performers, songwriters, and individuals. From personalized coaching
+            to workshops with industry experts, we provide the tools and
+            guidance for artists to evolve and excel in their careers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Part (Community Engagement) -->
+      <div class="md:w-1/2 mt-6 md:mt-0">
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold mb-4">Community Engagement</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Music has the power to unite, and we believe in fostering a vibrant
+            community of music lovers. Through events, collaborations, and
+            outreach programs, we actively engage with our audience and create
+            spaces for shared experiences. Whether it's supporting local talent,
+            organizing music festivals, or collaborating with community
+            initiatives, we strive to build connections that go beyond the
+            boundaries of the recording studio.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Awards and Recognition Section -->
+    <section class="container mx-auto mt-12">
+      <h2 class="text-3xl font-bold mb-8 text-center">
+        Awards and Recognition
+      </h2>
+
+      <!-- Award Cards -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+      >
+        <!-- Award Card 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="award_image1.jpg"
+            alt="Award 1"
+            class="w-48 h-48 mx-auto mb-4 rounded-full"
+          />
+          <h3 class="text-xl font-bold mb-2">Best Album</h3>
+          <p class="text-gray-600">2020</p>
+        </div>
+
+        <!-- Award Card 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="award_image2.jpg"
+            alt="Award 2"
+            class="w-48 h-48 mx-auto mb-4 rounded-full"
+          />
+          <h3 class="text-xl font-bold mb-2">Artist of the Year</h3>
+          <p class="text-gray-600">2019</p>
+        </div>
+
+        <!-- Award Card 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="award_image3.jpg"
+            alt="Award 3"
+            class="w-48 h-48 mx-auto mb-4 rounded-full"
+          />
+          <h3 class="text-xl font-bold mb-2">Breakthrough Artist</h3>
+          <p class="text-gray-600">2018</p>
+        </div>
+
+        <!-- Award Card 4 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="award_image4.jpg"
+            alt="Award 4"
+            class="w-48 h-48 mx-auto mb-4 rounded-full"
+          />
+          <h3 class="text-xl font-bold mb-2">Song of the Year</h3>
+          <p class="text-gray-600">2017</p>
+        </div>
+
+        <!-- ... (Add more award cards) ... -->
+      </div>
+    </section>
+    <!-- Partnerships Section -->
+    <section class="container mx-auto mt-12">
+      <h2 class="text-3xl font-bold mb-8 text-center">Partnerships</h2>
+
+      <!-- Partnership Cards -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+      >
+        <!-- Partnership Card 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="partnership_image1.jpg"
+            alt="Partnership 1"
+            class="w-full h-auto rounded"
+          />
+        </div>
+
+        <!-- Partnership Card 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="partnership_image2.jpg"
+            alt="Partnership 2"
+            class="w-full h-auto rounded"
+          />
+        </div>
+
+        <!-- Partnership Card 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="partnership_image3.jpg"
+            alt="Partnership 3"
+            class="w-full h-auto rounded"
+          />
+        </div>
+
+        <!-- Partnership Card 4 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="partnership_image4.jpg"
+            alt="Partnership 4"
+            class="w-full h-auto rounded"
+          />
+        </div>
+
+        <!-- ... (Add more partnership cards) ... -->
+      </div>
+    </section>
+    <!-- Positive Reviews Section -->
+    <section class="container mx-auto mt-12">
+      <h2 class="text-3xl font-bold mb-8 text-center">Positive Reviews</h2>
+
+      <!-- Review Cards -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+      >
+        <!-- Review Card 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="reviewer_image1.jpg"
+            alt="Reviewer 1"
+            class="w-full h-auto rounded-full mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold mb-2">John Smith</h3>
+          <p class="text-gray-600">
+            "Your Record Label has been a game-changer for me. The support,
+            guidance, and opportunities provided are unparalleled. It's a
+            community that fosters creativity and collaboration. Proud to be
+            part of this family!"
+          </p>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="reviewer_image2.jpg"
+            alt="Reviewer 2"
+            class="w-full h-auto rounded-full mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold mb-2">Emily Johnson</h3>
+          <p class="text-gray-600">
+            "I can't express how grateful I am to be associated with Your Record
+            Label. The personalized attention, industry insights, and the sense
+            of belonging make it a standout choice for any artist. Highly
+            recommended!"
+          </p>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="reviewer_image3.jpg"
+            alt="Reviewer 3"
+            class="w-full h-auto rounded-full mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold mb-2">Alexandra Davis</h3>
+          <p class="text-gray-600">
+            "Being part of Your Record Label has been an incredible journey. The
+            team's dedication to artists' growth is evident in every aspect. The
+            collaborative spirit and positive atmosphere set it apart from the
+            rest."
+          </p>
+        </div>
+
+        <!-- Review Card 4 -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <img
+            src="reviewer_image4.jpg"
+            alt="Reviewer 4"
+            class="w-full h-auto rounded-full mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold mb-2">Michael Anderson</h3>
+          <p class="text-gray-600">
+            "I've been with Your Record Label for years, and the experience
+            keeps getting better. The team's commitment to excellence and the
+            opportunities provided have been instrumental in my artistic
+            journey. Highly recommended!"
+          </p>
+        </div>
+
+        <!-- ... (Add more review cards) ... -->
+      </div>
+    </section>
+    <!-- Standard CTA Section -->
+    <section
+      class="container mx-auto mt-12 bg-gray-800 text-white p-8 rounded-lg text-center"
+    >
+      <h2 class="text-3xl font-bold mb-4">Join Us Today</h2>
+      <p class="text-gray-400 mb-4">
+        Discover the endless possibilities with Your Record Label. Join our
+        community and unleash your musical journey.
+      </p>
+
+      <!-- CTA Button -->
+      <a
+        href="#contact"
+        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full inline-block transition duration-300"
+        >Get Started</a
+      >
+    </section>
+
+    <!-- About Us Section -->
+    <!-- ... (Rest of your About Us content) ... -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto flex justify-between items-center">
+        <p>&copy; 2023 Your Record Label</p>
+        <nav>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Your JavaScript goes here (e.g., for interactive elements) -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/siema@1.4.3/dist/siema.min.js"></script>
+  </body>
+</html>

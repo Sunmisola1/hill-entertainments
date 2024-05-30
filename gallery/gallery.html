@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="about.css" />
+    <script
+      src="https://kit.fontawesome.com/9e0694c1ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Add these lines in the head of your HTML file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/constant.css" />
+    <link rel="stylesheet" href="artist.css" />
+  </head>
+  <body class="font-serif">
+    <div class="artist">
+      <header class="text-white p-4 font-bold text-lg font-body header-wrap">
+        <div class="container mx-auto flex items-center justify-between mt-3">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-yellow-400">
+              <img src="/assets/logo.png" alt="logo" class="h-10 w-auto" />
+            </a>
+          </div>
+          <nav class="hidden md:flex space-x-6">
+            <a href="/index.html" class="hover:text-yellow-400">Home</a>
+            <a href="/about/about.html" class="hover:text-yellow-400"
+              >About Us</a
+            >
+            <a href="/artist/artist.html" class="hover:text-yellow-400"
+              >Artists</a
+            >
+            <a href="/music-catalogue/music.html" class="hover:text-yellow-400"
+              >Music</a
+            >
+            <a href="/services/services.html" class="hover:text-yellow-400"
+              >Services</a
+            >
+
+            <a href="/contact/contact.html" class="hover:text-yellow-400"
+              >Contact</a
+            >
+          </nav>
+          <div class="hidden md:flex items-center space-x-4">
+            <button
+              class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-yellow-500"
+            ><a href="/users/login.html">Subscribe</a>  
+            </button>
+          </div>
+          <!-- bug -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-button"
+              class="text-white hover:text-yellow-400"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

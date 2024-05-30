@@ -1,0 +1,27 @@
+/* Styling for the hidden info on hover */
+.relative:hover .hidden {
+  display: block;
+}
+.hero {
+  height: 60vh;
+
+  background: radial-gradient(
+      ellipse at bottom left,
+      rgba(0, 0, 0, 0.673),
+      rgba(0, 0, 0, 0.673),
+      rgba(0, 0, 0, 0.673),
+      rgba(0, 0, 0, 0.673),
+      rgba(0, 0, 0, 0.673),
+      rgba(0, 0, 0, 0.673),
+      rgba(0, 0, 0, 0.673),
+      rgba(0, 0, 0, 0.673),
+      rgba(0, 0, 0, 0.673),
+      rgba(0, 0, 0, 0.673),
+      rgba(229, 14, 14, 0.397)
+    ),
+    url('/assets/artist-page.jpg');
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

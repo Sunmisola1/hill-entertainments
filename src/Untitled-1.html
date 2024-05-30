@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/9e0694c1ee.js" crossorigin="anonymous"></script>
+    <!-- Add these lines in the head of your HTML file -->
+    <link rel="stylesheet" href="/src/css/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hero-start ">
+      <header class="text-white p-4 font-bold text-lg font-body bg-black ">
+        <div class="mx-auto flex items-center justify-between mt-3">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-yellow-400">
+              <img src="/assets/logo.png" alt="logo" class="h-10 w-auto" />
+            </a>
+          </div>
+          <nav class="hidden md:flex space-x-6 ">
+            <a href="#" class="hover:text-yellow-400">Home</a>
+            <a href="/about/about.html" class="hover:text-yellow-400">About Us</a>
+            <a href="/artist/artist.html" class="hover:text-yellow-400">Artists</a>
+            <a href="/music-catalogue/music.html" class="hover:text-yellow-400">Music</a>
+            <a href="/services/services.html" class="hover:text-yellow-400">Services</a>
+                      <a href="/contact/contact.html" class="hover:text-yellow-400">Contact</a>
+          </nav>
+          <div class="hidden md:flex items-center space-x-4">
+            <button
+              class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-yellow-500"
+            >
+              Subscribe
+            </button>
+          </div>
+          <!-- bug -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-button"
+              class="text-white hover:text-yellow-400"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- hero-section -->
+      <div
+        class="hero bg-cover bg-gray-100 bg-center p-6 text-wrap relative flex h-screen  mb-8"
+      >
+        <div class="absolute inset-0"></div>
+        <div class="text-left z-10 mt-12">
+          <h1
+            class="text-3xl  text-red-500 head-wrap md:text-4xl lg:text-5xl font-extrabold mb-4 capitalize"
+          >
+            Stream and download music <br />anywhere anytime
+          </h1>
+          <p class="text-lg md:text-xl lg:text-2xl para mb-3">
+            <span id="typed-output"></span>
+          </p>
+          <p class="text-lg md:text-xl lg:text-2xl para text-gray-300 mb-6">
+            Join us on the musical journey!
+          </p>
+
+          <a
+            href="#"
+            class="bg-red-600 btn-shadow text-lg mt-12 text-btn text-white rounded-2xl text-center p-3 font-bold hover:bg-white hover:text-gray-900 transition duration-300"
+            >Explore Now</a
+          >
+        </div>
+        
+      <div class="text-left z-10 ml-2">
+       <div class="md:col-span-1">
+          <div class="mb-4">
+            <div class="relative">
+              <!-- Big Rounded Image -->
+              <img
+                src="/assets/studio2.png"
+                alt="Big Rounded Image"
+                class="w-72 h-72  md:w-72 md:h-48 object-cover rounded-full shadow-lg big-img"
+              />
+
+              <!-- First Smaller Image -->
+              <img
+                src="/assets/bg11.jpg"
+                alt="Small Image 1"
+                class="absolute top-12 right-12 w-42 h-42 md:w-16 md:h-16 lg:w-42 lg:h-42 object-cover rounded-full border-4 border-white shadow-lg"
+              />
+
+              <!-- Second Smaller Image -->
+              <img
+                src="/assets/banner.jpg"
+                alt="Small Image 2"
+                class="absolute bottom-0 left-0 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-cover rounded-full border-4 border-white shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+        
+        </div> 
+        <!-- event flyers -->
+       <!-- <div
+          class="container mx-auto my-2 p-2 bg-white rounded-lg shadow-lg fliers"
+        >
+          <h4
+            class="text-red-700 bold text-2xl capitalize text-center event-head"
+          >
+            upcoming event
+          </h4>
+          <div
+            class="flex items-center justify-between fliers-a py-1 px-1 bg-blue-500 text-white animate__animated animate__fadeIn"
+          >
+            <div class="flex items-center"> -->
+              <!-- Event Image (Left) -->
+              <!-- <img
+                src="/assets/event.jpg"
+                alt="Event Image"
+                class="w-32 h-22 ml-4 rounded-lg shadow-lg"
+              />  -->
+
+              <!-- Event Title -->
+             <!-- <div>
+                <h1 class="text-2xl font-bold mb-2 ml-6">
+                  Harmony Unleashed: <br /><span class="text-center"
+                    >"A Melodic Fusion"</span
+                  >
+                </h1>
+              </div>
+            </div>  -->
+
+            <!-- Countdown Timer (Right) -->
+
+             <!-- <div class="text-lg font-bold text-red-200">
+              <p class="text-base text-center text-2xl">
+                Date: January 1, 2024
+              </p>
+              <p id="countdown" class="text-4xl"></p>
+            </div>  -->
+
+            <!-- Buy Ticket Button with Hover Effect -->
+            <!-- <button
+              class="bg-red-600 text-white hover:bg-white hover:text-red-600 text-sm py-2 px-4 rounded-full transition duration-300 transform hover:scale-105"
+            >
+              Buy Ticket
+            </button>
+          </div>  -->
+          <!-- Your other content goes here -->
+        <!--</div>  -->
+      </div>
+    </div>
+
+    <!-- mobile view -->
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden absolute bg-red-500 bg-opacity-50 top-16 right-0 w-64 text-lg text-center p-4 space-y-4 mobile-text head-link"
+    >
+      <ul>
+               <li><a href="" class="block text-white text-xl  font-bold font-mono hover:text-yellow-400 py-3">Home</a></li>
+               <li>
+                <a href="/about/about.html" class="block text-white   text-xl     font-bold font-mono hover:text-yellow-400 py-3">About Us</a>
+              </li>
+               <li>
+          <a href="/artist/artist.html" class="block text-white   text-xl   font-bold font-mono hover:text-yellow-400 py-3">Artists</a>
+        </li>
+        <li><a href="/music-catalogue/music.html" class="block text-white text-xl    font-bold font-mono hover:text-yellow-400 py-3">Music</a></li>
+        <li>
+          <a href="/services/services.html" class="block text-white   text-xl     font-bold font-mono hover:text-yellow-400 py-3">Services</a>
+        </li>
+       
+        <li>
+          <a href="/contact/contact.html" class="block  text-white  text-xl font-bold font-mono hover:text-yellow-400 py-3">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- latest card -->
+    <section class="container mx-auto my-8">
+      <h2 class="text-2xl font-bold mb-6">New Releases</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- New Release Card 1 -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <img
+            src="/assets/banner.jpg"
+            alt="Release Cover"
+            class="w-full h-40 object-cover mb-4"
+          />
+          <div class="flex items-center justify-between mb-2">
+            <p class="text-gray-600">Price: $9.99</p>
+            <div class="flex items-center">
+              <span class="text-gray-600">Rating:</span>
+              <!-- Replace the next line with your own rating icon or symbol -->
+              <i class="fas fa-star text-yellow-500 ml-1"></i>
+            </div>
+          </div>
+          <p class="text-xl font-bold mb-2">Artist Name 1</p>
+          <p class="text-gray-600">Song Title 1</p>
+        </div>
+
+        <!-- New Release Card 2 -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <img
+            src="/assets/banner.jpg"
+            alt="Release Cover"
+            class="w-full h-40 object-cover mb-4"
+          />
+          <div class="flex items-center justify-between mb-2">
+            <p class="text-gray-600">Price: $12.99</p>
+            <div class="flex items-center">
+              <span class="text-gray-600">Rating:</span>
+              <!-- Replace the next line with your own rating icon or symbol -->
+              <i class="fas fa-star text-yellow-500 ml-1"></i>
+            </div>
+          </div>
+          <p class="text-xl font-bold mb-2">Artist Name 2</p>
+          <p class="text-gray-600">Song Title 2</p>
+        </div>
+
+        <!-- New Release Card 3 -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <img
+            src="/assets/banner.jpg"
+            alt="Release Cover"
+            class="w-full h-40 object-cover mb-4"
+          />
+          <div class="flex items-center justify-between mb-2">
+            <p class="text-gray-600">Price: $8.99</p>
+            <div class="flex items-center">
+              <span class="text-gray-600">Rating:</span>
+              <!-- Replace the next line with your own rating icon or symbol -->
+              <i class="fas fa-star text-yellow-500 ml-1"></i>
+            </div>
+          </div>
+          <p class="text-xl font-bold mb-2">Artist Name 3</p>
+          <p class="text-gray-600">Song Title 3</p>
+        </div>
+
+        <!-- New Release Card 4 -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <img
+            src="/assets/banner.jpg"
+            alt="Release Cover"
+            class="w-full h-40 object-cover mb-4"
+          />
+          <div class="flex items-center justify-between mb-2">
+            <p class="text-gray-600">Price: $10.99</p>
+            <div class="flex items-center">
+              <span class="text-gray-600">Rating:</span>
+              <!-- Replace the next line with your own rating icon or symbol -->
+              <i class="fas fa-star text-yellow-500 ml-1"></i>
+            </div>
+          </div>
+          <p class="text-xl font-bold mb-2">Artist Name 4</p>
+          <p class="text-gray-600">Song Title 4</p>
+        </div>
+        <!-- Add more new release cards as needed -->
+      </div>
+    </section>
+
+  <!-- artist -->
+  <div class="w-auto h-102 bg-gray-200">
+    <div class="artist-wrap">
+      <h2 class="text-3xl pt-8 text-gray-800 text-center capitalize font-bold">
+       our trending artist 
+      </h2>
+            <!-- Artist Cards -->
+      <div
+        class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 mb-2 p-5 w-auto mt-6 m-auto"
+      >
+        <!-- Artist Card 1 -->
+        <div class="relative group bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+          <img src="/assets/1.png" alt="Artist 1" class="w-32 h-32 mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-bold mb-2">Artist Name</h3>
+          <p class="text-gray-600 mb-2">Genres: Pop, Rock</p>
+          <p class="text-gray-600 mb-2">Latest Music: "Song Title"</p>
+          <!-- Hidden info on normal state -->
+          <div class="hidden absolute top-0 left-0 right-0 bottom-0 bg-white opacity-90 p-4 rounded-lg transition duration-300 group-hover:block">
+              <p class="text-gray-800 mb-2">Bio: A brief description of the artist...</p>
+              <a href="#" class=" bg-red-700 btn-shadow text-white hover:bg-yellow-700 px-4 text-sm py-2 uppercase font-serif font-bold rounded-lg">hire artist</a>
+            </div>
+      </div>
+
+        <!-- Artist Card 2 -->
+        <div class="relative group bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+          <img src="/assets/2.png" alt="Artist 1" class="w-32 h-32 mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-bold mb-2">Artist Name</h3>
+          <p class="text-gray-600 mb-2">Genres: Pop, Rock</p>
+          <p class="text-gray-600 mb-2">Latest Music: "Song Title"</p>
+          <!-- Hidden info on normal state -->
+          <div class="hidden absolute top-0 left-0 right-0 bottom-0 bg-white opacity-90 p-4 rounded-lg transition duration-300 group-hover:block">
+              <p class="text-gray-800 mb-2">Bio: A brief description of the artist...</p>
+              <a href="#" class=" bg-red-700 btn-shadow text-white hover:bg-yellow-700 px-4 text-sm py-2 uppercase font-serif font-bold rounded-lg">hire artist</a>
+            </div>
+      </div>
+
+        <!-- Artist Card 3 -->
+        <div class="relative group bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+          <img src="/assets/3.png" alt="Artist 1" class="w-32 h-32 mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-bold mb-2">Artist Name</h3>
+          <p class="text-gray-600 mb-2">Genres: Pop, Rock</p>
+          <p class="text-gray-600 mb-2">Latest Music: "Song Title"</p>
+          <!-- Hidden info on normal state -->
+          <div class="hidden absolute top-0 left-0 right-0 bottom-0 bg-white opacity-90 p-4 rounded-lg transition duration-300 group-hover:block">
+              <p class="text-gray-800 mb-2">Bio: A brief description of the artist...</p>
+              <a href="#" class=" bg-red-700 btn-shadow text-white hover:bg-yellow-700 px-4 text-sm py-2 uppercase font-serif font-bold rounded-lg">hire artist</a>
+            </div>
+      </div>
+
+        <!-- Artist Card 4 -->
+        <div class="relative group bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+          <img src="/assets/4.png" alt="Artist 1" class="w-32 h-32 mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-bold mb-2">Artist Name</h3>
+          <p class="text-gray-600 mb-2">Genres: Pop, Rock</p>
+          <p class="text-gray-600 mb-2">Latest Music: "Song Title"</p>
+          <!-- Hidden info on normal state -->
+          <div class="hidden absolute top-0 left-0 right-0 bottom-0 bg-white opacity-90 p-4 rounded-lg transition duration-300 group-hover:block">
+              <p class="text-gray-800 mb-2">Bio: A brief description of the artist...</p>
+              <a href="#" class=" bg-red-700 btn-shadow text-white hover:bg-yellow-700 px-4 text-sm py-2 uppercase font-serif font-bold rounded-lg">hire artist</a>
+            </div>
+      </div>
+
+      </div>
+      
+    </div>
+  </div>
+  <!-- New Release Section -->
+  <div class="release">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Music Card Section -->
+      <div
+        class="bg-yellow-500 w-64 rounded-lg ml-12 mb-6 mt-6 overflow-hidden shadow-md p-8"
+      >
+        <img
+          src="/assets/g8.jpg"
+          alt="Music Cover"
+          class="w-full h-32 object-cover"
+        />
+        <div class="p-4">
+          <h2 class="text-xl font-bold mb-2">Music Title</h2>
+          <p class="text-gray-600">Author Name</p>
+          <p class="text-gray-600">Duration: 3:45</p>
+          <!-- Playback Controls -->
+          <div class="flex justify-center mt-4">
+            <button
+              id="backwardButton"
+              class="mr-2 text-blue-500 hover:text-blue-700"
+            >
+              &lt;&lt;
+            </button>
+            <button id="playButton" class="text-blue-500 hover:text-blue-700">
+              Play
+            </button>
+            <button
+              id="forwardButton"
+              class="ml-2 text-blue-500 hover:text-blue-700"
+            >
+              &gt;&gt;
+            </button>
+          </div>
+          <div class="block mx-auto">
+            <button
+              id="shareButton"
+              class="bg-red-600 text-white mt-6 px-16 py-2 rounded-full hover:bg-gray-700 transition duration-300"
+            >
+              Share
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- second part -->
+      <div class="md:col-span-2 p-4">
+        <h2 class="text-5xl font-bold mb-2 text-border-2 text-white">
+          Out Now!!!
+        </h2>
+        <h3 class="text-3xl font-bold mb-2 text-white">
+          New Album-Sunset Skies!!!
+        </h3>
+
+        <p class="text-white mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="flex items-center space-x-4">
+          <button
+            class="bg-red-100 border-2 border-white bg-opacity-50 text-white tex px-8 py-2 hover:text-red-700 hover:bg-white-700 transition duration-300"
+          >
+            listen to the new album
+          </button>
+          <button
+            class="bg-white text-red-600 px-4 py-2 hover:bg-gray-700 transition duration-300"
+          >
+            Download
+          </button>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-8 mb-2">Share the Song</h2>
+        <p class="text-white text-xl mb-4">
+          Share this amazing song with your friends and spread the joy!
+        </p>
+        <div class="flex items-center space-x-4">
+          <!-- Additional Buttons -->
+          <button
+            class="bg-gray-500 text-white px-4 py-2 rounded-full hover:bg-gray-700 transition duration-300"
+          >
+            Tweet
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- latest release -->
+   <div class="w-auto h-106 latest-release bg-opacity-20 p-16">
+    <div class="artist-wrap">
+      <div class=" mb-2 album-text">
+      <h2 class="text-5xl font-serif uppercase pt-1 text-red-700 font-bold ">
+        Albums  
+            <p class="border-red-600 hover:border-yellow-700 text-sm img-shadow float-right text-white bg-yellow-600 rounded-lg bg-opacity-30 text-center border-2 w-28 p-2">show all</p>
+    </h2>
+    </div>
+    <hr class="border-2 border-red-600 ">
+      <!-- latest Cards -->
+      <div
+        class="grid md:grid-cols-3 lg:grid-cols-4 gap-8  w-auto"
+      >
+        <!-- latest Card 1 -->
+        <div class="w-72 shadow-md bg-gray-100 latest-card mt-12 mb-8">
+          <img
+            src="/assets/album.png"
+            alt="Artist 1"
+            class="w-full h-56 object-cover rounded-lg mb-4 "
+          />
+          <h3 class="text-2xl font-bold text-gray-500 font-serif  uppercase font-serif ">unavailable</h3>
+          <h6 class="text-2sm font-bold font-serif text-white text-opacity-50 capitalize font-serif ">Artist:Davido</h6>
+
+          <p class="text-white font-semibold font-italic ">Stream On : 
+            <span class="ml-2 text-sm text-red-600 "><i class="fa-brands fa-spotify fa-beat-fade"></i></span>
+            <span class="ml-4 text-sm text-red-600 "><i class="fa-brands fa-youtube fa-beat-fade"></i></span>
+            <span class="ml-4 text-sm text-red-600"><i class="fa-sharp fa-solid fa-music fa-bounce"></i></span>
+            <span class="ml-4 text-sm text-red-600 "><i class="fa-solid fa-cloud fa-beat"></i></span>
+        </p>
+          
+        </div>
+         <!-- latest Card 2 -->
+       
+         <div class="w-72  shadow-md  latest-card mt-12 mb-8">
+          <img
+            src="/assets/album.png"
+            alt="Artist 1"
+            class="w-full  object-cover rounded-lg mb-4 "
+          />
+          <h3 class="text-2xl font-bold font-serif text-gray-500 uppercase font-serif ">unavailable</h3>
+          <h6 class="text-2sm font-bold font-serif text-white text-opacity-50 capitalize font-serif ">Artist:Davido</h6>
+
+          <p class="text-white font-semibold font-italic ">Stream On : 
+            <span class="ml-2 text-sm text-red-600 "><i class="fa-brands fa-spotify fa-beat-fade"></i></span>
+            <span class="ml-4 text-sm text-red-600 "><i class="fa-brands fa-youtube fa-beat-fade"></i></span>
+            <span class="ml-4 text-sm text-red-600"><i class="fa-sharp fa-solid fa-music fa-bounce"></i></span>
+            <span class="ml-4 text-sm text-red-600 "><i class="fa-solid fa-cloud fa-beat"></i></span>
+        </p>
+          
+        </div>
+        <!--latest Card 3 -->
+       
+        <div class="w-72  shadow-md  latest-card mt-12 mb-8">
+          <img
+            src="/assets/album.png"
+            alt="Artist 1"
+            class="w-full h-56 object-cover rounded-lg mb-4 "
+          />
+          <h3 class="text-2xl font-bold text-gray-500 font-serif  uppercase font-serif ">unavailable</h3>
+          <h6 class="text-2sm font-bold font-serif text-white text-opacity-50 capitalize font-serif ">Artist:Davido</h6>
+
+          <p class="text-white font-semibold font-italic ">Stream On : 
+            <span class="ml-2 text-sm text-red-600 "><i class="fa-brands fa-spotify fa-beat-fade"></i></span>
+            <span class="ml-4 text-sm text-red-600 "><i class="fa-brands fa-youtube fa-beat-fade"></i></span>
+            <span class="ml-4 text-sm text-red-600"><i class="fa-sharp fa-solid fa-music fa-bounce"></i></span>
+            <span class="ml-4 text-sm text-red-600 "><i class="fa-solid fa-cloud fa-beat"></i></span>
+        </p>
+        </div>
+        <!-- latest Card 4 -->
+        <div class="w-72  shadow-md  latest-card mt-12 mb-8">
+          <img
+            src="/assets/album.png"
+            alt="Artist 1"
+            class="w-full h-56 object-cover rounded-lg mb-4 "
+          />
+          <h3 class="text-2xl font-bold text-gray-500 font-serif  uppercase font-serif ">unavailable</h3>
+          <h6 class="text-2sm font-bold font-serif text-white text-opacity-50 capitalize font-serif ">Artist:Davido</h6>
+
+          <p class="text-white font-semibold font-italic ">Stream On : 
+            <span class="ml-2 text-sm text-red-600 "><i class="fa-brands fa-spotify fa-beat-fade"></i></span>
+            <span class="ml-4 text-sm text-red-600 "><i class="fa-brands fa-youtube fa-beat-fade"></i></span>
+            <span class="ml-4 text-sm text-red-600"><i class="fa-sharp fa-solid fa-music fa-bounce"></i></span>
+            <span class="ml-4 text-sm text-red-600 "><i class="fa-solid fa-cloud fa-beat"></i></span>
+        </p>
+          
+        </div>
+        <!-- latest Card 5 -->
+       
+      </div>
+
+      <!-- latest realease -->
+    </div>
+  </div>
+ 
+   
+    <!-- upcoming show -->
+   
+      <section class="container mx-auto mt-12 mb-8">
+        <h2 class="text-3xl font-bold text-center pb-8">Upcoming Events</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+            <!-- Event Details Part -->
+            <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                <!-- Countdown Timer -->
+                <div class="text-4xl font-bold mb-4" id="countdown">00:00:00</div>
+                <!-- Event Details -->
+                
+                <p class="text-gray-600 mb-2">Date: December 25, 2023</p>
+                <p class="text-gray-600 mb-2">Venue: Concert Hall</p>
+                <p class="text-gray-600 mb-2">Artist:Fizzy J</p>
+                <p class="text-gray-600 mb-2">Time: 12pm</p>
+                <!-- Additional Details or Links -->
+                <a href="#" class="bg-black hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full inline-block transition duration-300">About Event</a>
+
+            </div>
+      
+            <!-- Event Image Part -->
+            <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+                <!-- Event Image -->
+                <img src="/assets/mybg.png" alt="Upcoming Event" class="w-full h-48 object-cover mb-4 rounded-lg">
+            </div>
+            
+        </div>
+      
+        <!-- Book Tickets Button -->
+        <div class="text-center mt-8">
+            <a href="#" class="bg-black hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full inline-block transition duration-300">Book Tickets</a>
+            <a href="#" class="bg-black hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full inline-block transition duration-300">Show All Events</a>
+
+          </div>
+      </section>
+
+      <!-- sponspored -->
+      <div class="w-auto h-102 bg-gray-200">
+        <div class="artist-wrap">
+          <h2 class="text-3xl pt-8 text-gray-800 text-center capitalize font-bold">
+          our sponsors 
+          </h2>
+          <!-- Artist Cards -->
+          <div
+            class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 p-5 w-auto mt-6 m-auto"
+          >
+            <!-- Artist Card 1 -->
+            <div class="bg-gray-100  shadow-md">
+              <img
+                src="/assets/edit.png"
+                alt="Artist 1"
+                class="w-64 h-42 object-cover rounded-lg"
+              />
+             
+            </div>
+    
+          
+            </div>
+          </div>
+    
+          <!-- latest realease -->
+        </div>
+      </div>
+    
+      <footer class="bg-red-500 text-white py-8">
+        <div class="container mx-auto flex justify-between items-center">
+          <p>&copy; 2023 Your Record Label</p>
+          <nav>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/siema@1.4.3/dist/siema.min.js"></script>
+  </body>
+</html>

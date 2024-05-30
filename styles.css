@@ -1,0 +1,188 @@
+.nav-wrap {
+  height: 12vh;
+  background-color: white;
+}
+.hero-start {
+  background: red url('/assets/bg-img-1.jpg');
+  background-repeat: no-repeat;
+  height: 80vh !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#typed-output {
+  color: #d9b658;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  animation: textShadow 2s infinite;
+}
+.fliers {
+  position: absolute;
+  top: 60%;
+  height: 18%;
+  /* background: url('/assets/fire.jpg'); */
+}
+/* mobile */
+.mb-link {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: moveup 0.5s linear forwards;
+}
+.fliers-a {
+  background: radial-gradient(
+      ellipse at bottom left,
+      rgba(185, 155, 155, 0.103),
+      rgba(229, 14, 14, 0.103),
+      rgba(229, 14, 14, 0.103),
+      rgba(229, 14, 14, 0.103),
+      rgba(229, 14, 14, 0.103),
+      rgba(229, 14, 14, 0.103),
+      rgba(229, 14, 14, 0.103),
+      rgba(229, 14, 14, 0.103),
+      rgba(229, 14, 14, 0.103),
+      rgba(229, 14, 14, 0.103),
+      rgba(229, 14, 14, 0.103),
+      rgb(240, 234, 234),
+      rgba(229, 14, 14, 0.103)
+    ),
+    url('/assets/fire.jpg');
+}
+.event-head {
+  margin-top: -10px;
+}
+
+.release {
+  background: radial-gradient(
+      ellipse at top left,
+      rgba(217, 216, 216, 0.454),
+      rgba(44, 13, 13, 0.911),
+      rgba(217, 216, 216, 0.454),
+      rgba(16, 2, 2, 0.971),
+      rgb(44, 13, 13),
+      rgba(44, 13, 13, 0.746),
+      rgba(44, 13, 13, 0.854),
+      rgba(44, 13, 13, 0.454),
+      rgba(217, 216, 216, 0.454),
+      rgba(217, 216, 216, 0.874)
+    ),
+    url('/assets/bg10.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: luminosity;
+}
+.latest-release {
+  background-color: rgba(133, 67, 67, 0.033);
+}
+.head-wrap {
+  animation-delay: 1.5s;
+}
+.para {
+  animation-delay: 2s;
+}
+.text-btn {
+  animation-delay: 2.5s;
+}
+.text-wrap {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: moveup 1s linear forwards;
+}
+.header-wrap {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: moveup 0.5s linear forwards;
+}
+.btn-wrap {
+  transform: translateY(30px);
+  opacity: 3;
+  animation: moveup 6s linear forwards;
+}
+/* artst */
+.relative:hover .hidden {
+  display: block;
+}
+.hero {
+  height: 60vh;
+}
+
+/* upcoming event */
+.events {
+  background-image: url('/assets/bg9.jpg');
+}
+.events-one {
+  background-image: url('/assets/bg3.jpg');
+}
+.events-two {
+  background-image: url('/assets/bg2.jpg');
+}
+.img-shadow {
+  box-shadow: 0 0 5px white, 0 0 25px yellow;
+  animation: underglowyellow 2s infinite;
+}
+.text-shadow {
+  box-shadow: 0 0 5px white, 0 0 25px white;
+  animation: underglowwhite 2s infinite;
+}
+.btn-shadow {
+  box-shadow: 0 0 5px rgba(145, 33, 33, 0.901),
+    0 0 25px rgba(227, 227, 221, 0.621);
+  animation: underglowwhite 2s infinite;
+}
+
+.new-signed-text {
+  width: 35%;
+}
+
+@keyframes underglowwhite {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 5px rgba(145, 33, 33, 0.901),
+      0 0 25px rgba(199, 199, 174, 0.621), 0 0 35px rgba(145, 33, 33, 0.901),
+      0 0 50px rgba(187, 187, 181, 0.621);
+  }
+}
+@keyframes underglow {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0);
+    box-shadow: 0 0 1px white, 0 0 1.5px yellow, 0 0 3px white, 0 0 6px yellow;
+  }
+}
+@keyframes underglowyellow {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0);
+    box-shadow: 0 0 1px white, 0 0 1.5px yellow, 0 0 3px white, 0 0 6px yellow;
+  }
+}
+@keyframes glow {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+    box-shadow: 0 0 3px white, 0 0 6px yellow, 0 0 12px white, 0 0 24px yellow;
+  }
+}
+@keyframes overglow {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 0 5px white, 0 0 25px yellow, 0 0 50px white, 0 0 100px yellow;
+  }
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* latest card */
+.latest-card {
+  height: 50vh;
+}
+/* album-text */
+.album-text {
+  margin-top: -3.2%;
+}

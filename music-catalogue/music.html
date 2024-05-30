@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="music.css" />
+    <script
+      src="https://kit.fontawesome.com/9e0694c1ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Add these lines in the head of your HTML file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/constant.css" />
+    <link rel="stylesheet" href="artist.css" />
+  </head>
+  <body class="font-serif">
+    <div class="artist">
+      <header class="text-black p-4 font-bold text-lg font-body header-wrap">
+        <div class="container mx-auto flex items-center justify-between mt-3">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-yellow-400">
+              <img src="/assets/logo.png" alt="logo" class="h-10 w-auto" />
+            </a>
+          </div>
+          <nav class="hidden md:flex space-x-6">
+            <a href="/index2.html" class="hover:text-yellow-400">Home</a>
+            <a href="/about/about.html" class="hover:text-yellow-400">About Us</a>
+            <a href="/artist/artist.html" class="hover:text-yellow-400">Artists</a>
+            <a href="/music-catalogue/music.html" class="hover:text-yellow-400">Music</a>
+            <a href="/services/services.html" class="hover:text-yellow-400">Services</a>
+          
+            <a href="/contact/contact.html" class="hover:text-yellow-400">Contact</a>
+          </nav>
+          <div class="hidden md:flex items-center space-x-4">
+            <button
+              class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-yellow-500"
+            ><a href="/users/login.html">Subscribe</a>  
+            </button>
+          </div>
+          <!-- bug -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-button"
+              class="text-white hover:text-yellow-400"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section
+        class="grid grid-cols-1 md:grid-cols-3 bg-black text-red-600 py-16"
+      >
+        <!-- Image Part -->
+        <div class="md:col-span-1">
+          <div class="mb-4">
+            <div class="relative">
+              <!-- Big Rounded Image -->
+              <img
+                src="/assets/studio2.png"
+                alt="Big Rounded Image"
+                class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full shadow-lg big-img"
+              />
+
+              <!-- First Smaller Image -->
+              <img
+                src="/assets/bg11.jpg"
+                alt="Small Image 1"
+                class="absolute top-12 right-12 w-42 h-42 md:w-16 md:h-16 lg:w-42 lg:h-42 object-cover rounded-full border-4 border-white shadow-lg"
+              />
+
+              <!-- Second Smaller Image -->
+              <img
+                src="/assets/banner.jpg"
+                alt="Small Image 2"
+                class="absolute bottom-0 left-0 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-cover rounded-full border-4 border-white shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Text Part 1 -->
+        <div class="md:col-span-2 md:pl-8 lg:pl-8">
+          <h1 class="text-4xl text-red-700 font-bold mb-4">Music Catalogue</h1>
+          <p class="text-gray-400">
+            Explore our diverse collection of music tracks.
+          </p>
+
+          <!-- Two Buttons -->
+          <div class="mt-8">
+            <button
+              class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full mr-4"
+            >
+              Button 1
+            </button>
+            <button
+              class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full"
+            >
+              Button 2
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- New Releases Section -->
+      <section class="container mx-auto my-8">
+        <h2 class="text-2xl font-bold mb-6">New Releases</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- New Release Card 1 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="/assets/banner.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $9.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 1</p>
+            <p class="text-gray-600">Song Title 1</p>
+          </div>
+
+          <!-- New Release Card 2 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="/assets/banner.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $12.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 2</p>
+            <p class="text-gray-600">Song Title 2</p>
+          </div>
+
+          <!-- New Release Card 3 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="/assets/banner.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $8.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 3</p>
+            <p class="text-gray-600">Song Title 3</p>
+          </div>
+
+          <!-- New Release Card 4 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="/assets/banner.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $10.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 4</p>
+            <p class="text-gray-600">Song Title 4</p>
+          </div>
+          <!-- Add more new release cards as needed -->
+        </div>
+      </section>
+      <!-- best seller -->
+      <section class="container mx-auto my-8">
+        <h2 class="text-2xl font-bold mb-6">Our best Seller</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- New Release Card 1 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="/assets/banner.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $9.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 1</p>
+            <p class="text-gray-600">Song Title 1</p>
+          </div>
+
+          <!-- New Release Card 2 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="/assets/banner.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $12.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 2</p>
+            <p class="text-gray-600">Song Title 2</p>
+          </div>
+
+          <!-- New Release Card 3 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="/assets/banner.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $8.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 3</p>
+            <p class="text-gray-600">Song Title 3</p>
+          </div>
+
+          <!-- New Release Card 4 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="/assets/banner.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $10.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 4</p>
+            <p class="text-gray-600">Song Title 4</p>
+          </div>
+          <!-- Add more new release cards as needed -->
+        </div>
+      </section>
+
+      <!-- Two-Part Section -->
+      <section class="my-8 flex items-center justify-between p-8 bg-gray-500">
+        <!-- Left Part - Image -->
+        <div class="w-full md:w-1/2 lg:w-2/3 pl-4 lg:pl-10 flex items-center">
+          <!-- Text and Buttons -->
+          <div class="pl-2">
+            <h2 class="text-3xl font-bold mb-4">Discover Our Story</h2>
+            <p class="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut <br />labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              <br />laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <!-- Two Buttons -->
+            <div class="flex space-x-4">
+              <button
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full"
+              >
+                Learn More
+              </button>
+              <button
+                class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Right Part - Text and Rounded Images -->
+
+        <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 mb-8 md:mb-0">
+          <div class="relative">
+            <!-- Big Rounded Image -->
+            <img
+              src="/assets/studio2.png"
+              alt="Big Rounded Image"
+              class="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full shadow-lg big-img"
+            />
+
+            <!-- First Smaller Image -->
+            <img
+              src="/assets/bg11.jpg"
+              alt="Small Image 1"
+              class="absolute top-12 right-12 w-42 h-42 md:w-16 md:h-16 lg:w-42 lg:h-42 object-cover rounded-full border-4 border-white shadow-lg"
+            />
+
+            <!-- Second Smaller Image -->
+            <img
+              src="/assets/banner.jpg"
+              alt="Small Image 2"
+              class="absolute bottom-0 left-0 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-cover rounded-full border-4 border-white shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- comimg soon -->
+      <section class="container mx-auto my-8">
+        <h2 class="text-2xl font-bold mb-6">New Releases</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- New Release Card 1 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="release1.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-  cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $9.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 1</p>
+            <p class="text-gray-600">Song Title 1</p>
+          </div>
+
+          <!-- New Release Card 2 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="release2.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $12.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 2</p>
+            <p class="text-gray-600">Song Title 2</p>
+          </div>
+
+          <!-- New Release Card 3 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="release3.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $8.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 3</p>
+            <p class="text-gray-600">Song Title 3</p>
+          </div>
+
+          <!-- New Release Card 4 -->
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img
+              src="release4.jpg"
+              alt="Release Cover"
+              class="w-full h-40 object-cover mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-gray-600">Price: $10.99</p>
+              <div class="flex items-center">
+                <span class="text-gray-600">Rating:</span>
+                <!-- Replace the next line with your own rating icon or symbol -->
+                <i class="fas fa-star text-yellow-500 ml-1"></i>
+              </div>
+            </div>
+            <p class="text-xl font-bold mb-2">Artist Name 4</p>
+            <p class="text-gray-600">Song Title 4</p>
+          </div>
+          <!-- Add more new release cards as needed -->
+        </div>
+      </section>
+
+      <!-- Top Chart Section -->
+      <section class="container mx-auto my-8">
+        <h2 class="text-2xl font-bold mb-6">Top Chart</h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        >
+          <!-- Music Row 1 -->
+          <div
+            class="bg-white p-4 rounded-lg shadow-lg flex items-center justify-between"
+          >
+            <div class="flex items-center">
+              <!-- Cover Image -->
+              <img
+                src="cover1.jpg"
+                alt="Cover Image"
+                class="w-12 h-12 object-cover rounded-lg mr-4"
+              />
+              <div>
+                <p class="text-gray-700 font-bold">Artist Name 1</p>
+                <p class="text-gray-600">Song Title 1</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <p class="text-green-500 font-bold mr-2">$1.99</p>
+              <button
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-3 rounded-full"
+                onclick="togglePlayPause(this)"
+              >
+                <!-- Initial Play Icon from Font Awesome -->
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Music Row 2 -->
+          <!-- ... (similar structure as above) -->
+
+          <!-- Music Row 3 -->
+          <!-- ... (similar structure as above) -->
+
+          <!-- Music Row 4 -->
+          <!-- ... (similar structure as above) -->
+          <!-- Add more music rows as needed -->
+        </div>
+      </section>
+ <!-- upcoming show -->
+ <div class="w-auto h-102 bg-gray-100">
+  <h2 class="text-3xl pt-8 text-gray-800 text-center font-bold">
+UPCOMING SHOW
+      </h2>
+      <p class="text-gray-500 text-xl text-center font-bold">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+     </p>
+<!-- SHOW Cards -->
+<div
+class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-2 w-auto p-5  mt-6 m-auto"
+>
+<!-- show Card 1 -->
+<div class=" bg-gray-100 p-6 rounded-lg w-74 h-96 shadow-md events-two ">
+ <div class="textwrap relative">
+   <div class=" flex flex-col items-center ">
+     <h3 class="text-2xl text-center text-white font-bold font-semibold">
+       MEGA CONCERT
+     </h3>
+     <p class="text-yellow-300 text-center  text-xl font-bold mb-4">
+       04 FEB 2024
+     </p>
+   </div>
+   <div class=" mt-36 flex flex-col items-center ">
+   <h3 class="text-xl font-semibold text-red-200">IGANDO CLUB</h3>
+   <p class="text-gray-300 font-bold text-2xl mb-4 ">LAGOS</p>
+   <button
+     class="bg-red-600 hover:bg-red-300 text-white mb-4 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out"
+   >
+     BOOK TICKET
+   </button>
+   </div>
+ </div>
+</div>
+
+<!-- show Card 2 -->
+<div class=" bg-gray-100 p-6 rounded-lg w-74 h-96 shadow-md events-one">
+ <div class="textwrap relative">
+   <div class=" flex flex-col items-center ">
+     <h3 class="text-2xl text-center text-white font-bold font-semibold">
+       MEGA CONCERT
+     </h3>
+     <p class="text-yellow-300 text-center  text-xl font-bold mb-4">
+       05 FEB 2024
+     </p>
+   </div>
+   <div class=" mt-36 flex flex-col items-center ">
+   <h3 class="text-xl font-semibold text-red-200">IGANDO CLUB</h3>
+   <p class="text-gray-300 font-bold text-2xl mb-4 ">LAGOS</p>
+   <button
+     class="bg-red-600 hover:bg-red-300 text-white mb-4 font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out"
+   >
+   BOOK TICKET
+   </button>
+   </div>
+ </div>
+</div>
+<!-- show Card 3 -->
+<div class=" bg-gray-100 p-6 rounded-lg w-74 h-96 shadow-md events">
+ <div class="textwrap relative">
+   <div class=" flex flex-col items-center ">
+     <h3 class="text-2xl text-center text-white font-bold font-semibold">
+       MEGA CONCERT
+     </h3>
+     <p class="text-yellow-300 text-center  text-xl font-bold mb-4">
+       04 FEB 2024
+     </p>
+   </div>
+   <div class=" mt-36 flex flex-col items-center ">
+   <h3 class="text-xl font-semibold text-red-200">IGANDO CLUB</h3>
+   <p class="text-gray-300 font-bold text-2xl mb-4 ">LAGOS</p>
+   <button
+     class="bg-red-600 hover:bg-red-300 text-white mb-4 font-bold w-62 px-8 py-2 rounded-full transition duration-300 ease-in-out"
+   >
+   BOOK TICKET
+   </button>
+   </div>
+ </div>
+</div>
+</div>
+
+<!-- latest realease -->
+</div>
+      <script>
+        function togglePlayPause(button) {
+          // Toggle between play and pause icons
+          const icon = button.querySelector('i')
+          if (icon.classList.contains('fa-play')) {
+            icon.classList.remove('fa-play')
+            icon.classList.add('fa-pause')
+          } else {
+            icon.classList.remove('fa-pause')
+            icon.classList.add('fa-play')
+          }
+        }
+      </script>
+
+      <!-- Call-to-Action Section -->
+      <section class="bg-gray-800 text-white py-16 text-center">
+        <h2 class="text-3xl font-bold mb-4">Discover More Music</h2>
+        <p class="text-gray-400">
+          Explore our full music catalog and find your next favorite track.
+        </p>
+        <a
+          href="#"
+          class="mt-8 inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full"
+          >Explore Catalogue</a
+        >
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <!-- Link to Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-rBaqAMp8XtH2DZ5c5A+5lkDoos5ZU7pdMLqrYShLl9Y+ddtGz7RnxMM2l72slJqI" crossorigin="anonymous">
+    <style>
+        /* Additional CSS for responsive sidebar */
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 80%;
+                background-color: #111;
+                padding-top: 20px;
+                padding-left: 20px;
+                z-index: 1;
+            }
+
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+
+            .menu-icon i {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-200 flex flex-col md:flex-row">
+
+    <!-- Menu Icon for Mobile View -->
+    <div class="menu-icon p-4 cursor-pointer md:hidden">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar bg-gray-800 text-white p-4 w-full  md:w-1/6">
+        <!-- User Information -->
+        <div class="mb-8 text-center md:text-left">
+            <img src="path/to/user-image.jpg" alt="User Image" class="rounded-full h-16 w-16 mb-2 mx-auto md:mx-0">
+            <p class="text-lg font-semibold">User Name</p>
+        </div>
+
+        <!-- Sidebar Items -->
+        <div class="mb-4">
+            <h3 class="text-lg font-semibold mb-2">Navigation</h3>
+            <ul>
+                <li class="cursor-pointer flex items-center">
+                    <a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i></a>Home</li>
+
+                <li class="toggle-content cursor-pointer flex items-center"><i class="fas fa-music mr-2"></i>Latest Music</li>
+                <li class="toggle-content cursor-pointer flex items-center"><i class="far fa-calendar-alt mr-2"></i>Upcoming Events</li>
+                <li class="toggle-content cursor-pointer flex items-center"><i class="fas fa-handshake mr-2"></i>Be Our Sponsor</li>
+                <li class="toggle-content cursor-pointer flex items-center"><i class="fas fa-microphone-alt mr-2"></i>Register as a Singer</li>
+                <li class="toggle-content cursor-pointer flex items-center"><i class="fas fa-ad mr-2"></i>Advertise Your Product</li>
+                <!-- New list item for Purchased Songs -->
+                <li class="toggle-content cursor-pointer flex items-center"><i class="fas fa-shopping-cart mr-2"></i>Purchased Songs</li>
+            </ul>
+        </div>
+
+        <!-- Logout Button -->
+        <div>
+            <button class="bg-red-500 text-white p-2 rounded-md w-full">Logout</button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div id="dynamicContent" class="container mx-auto mt-8 w-full md:w-4/5">
+        <!-- Dynamic content for all available songs will be displayed here -->
+    </div>
+
+   
+<script src="/users/user.js"></script>
+</body>
+</html>
